@@ -59,6 +59,13 @@ padding: 0rem 1rem;
    max-width: 120px;
    display: block;
 }
+
+.link-secondary .link-active :hover{
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
 .link-active :hover{
     text-decoration:underline;
 }
