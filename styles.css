@@ -38,7 +38,7 @@ padding: 0rem 1rem;
 .link{
     padding:0.5rem 1rem ;
     text-decoration: none;
-    margin-bottom:30px ;
+    margin-bottom: 2rem;
     
 
 }
@@ -63,7 +63,7 @@ padding: 0rem 1rem;
 
 /* Navigation */
 .navigation {
-    height: 80px;
+    height: 13vh;
     background-color: var(--primary-color);
     color: white;
     padding-top: 1rem;
