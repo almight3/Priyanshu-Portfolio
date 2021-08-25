@@ -62,7 +62,7 @@ hr {
     border: 1px solid var(--primary-color);
     margin: 1rem 1rem 1rem 0rem;
     max-width: 120px;
-    display: block;
+    display: inline-block;
 }
 
 
