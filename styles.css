@@ -206,6 +206,12 @@ hr {
 .blog-img{
     margin: 2rem auto;
     max-width: 500px;
+   
+}
+@media (max-width:500px){
+    .blog-img {
+      width: 350px;    
+    }  
 }
 .last-para{
     margin-bottom: 5rem;
