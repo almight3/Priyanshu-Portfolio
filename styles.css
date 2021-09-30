@@ -200,5 +200,13 @@ hr {
 .blog-article{
     max-width: 650px;
     
-    margin: auto;
+    margin: 1rem auto;
+}
+
+.blog-img{
+    margin: 2rem auto;
+    max-width: 500px;
+}
+.last-para{
+    margin-bottom: 5rem;
 }

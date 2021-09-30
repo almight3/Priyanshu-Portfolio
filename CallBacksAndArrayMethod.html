@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+     <link rel="stylesheet" href="styles.css">
+    <title>CallBacksAndArrayMethod</title>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="brandname">IAmPriyanshu</div>
+        <ul class="list-non-bullet navpills">
+          <li class="list-inline ">
+            <a class="link" href="index.html">home</a>
+          </li>
+          <li class="list-inline"><a class="link " href="project.html">projects</a></li>
+          <li class="list-inline"><a class="link  link-active" href="/">blogs</a></li>
+        </ul>
+      </nav>
+
+      <article class="blog-article">
+        <h1 class="blog-heading">CallBack and Array Methods which accept CallBack functions as argument </h1>
+        <div class="blog-div">
+          <h4>Priyanshu Shrivastava</h4>
+          <h6><small>september, 2021</small></h6>
+        </div>
+    <p>In JavaScript, we can pass a function as an argument and return a function inside a function is known as Higher Orders Functions. So when we pass a function as an argument and invoke it inside, the outer functions are called callback functions. Call back functions are generally used in arrays, promises, event loops, etc. Callback functions are invoked according to the need of the outer function; suppose the outer function has some tasks to execute, and right after that invoke the callback function.</p>
+
+       <h2>Call Back in Array Methods</h2>
+
+       <h3>1. Map()</h3>
+       <p>The map() function iterates over an array and invokes a call-back function for every element present in the array and returns the element with the added value and maps it to the same index and then returns a new array. If we use map() we don’t have to create a loop manually to iterate over an array. In the map() function's call back is called with three arguments passed to it, in the first Argument value of the element, second argument index of the elements, and third argument is the array itself.
+
+       </p>
+
+        <h4>Example</h4>
+        <img src="./blog/callback/map.png" class="blog-img">
+        <p>Here we create an array(arr) and callback function(square) and another array(square Root) in which we're using map() function. When code executes, map() calls a (square) function for every value present in a (arr) and maps the value returned by the square function at the same index in (square Root).The first map() function calls the (square) function for the value on the first index of (arr) The (square) takes the value on the first index as an argument and returns the value, and the map() will map that square value to (square Root) at the same index. These steps are kept repeating until the last value in (arr).</p>    
+
+        <h3>2. Filter()</h3>
+        <p>The filter() function almost works the same as a map() function, but the only difference is that whatever callback function is passed in the filter() function, that callback function returns a boolean value. So whenever the callback function returns true for a value, it maps it to the new array, and if it returns false then that value will not be mapped to the new array.</p>
+        <h4>Example</h4>
+        <img src="./blog/callback/filter.png" class="blog-img">
+        <p>In this example, we filter out elements in the array that are odd. Here we create an array (arr) and store integer values in it. And create a callback function (sold) which returns boolean values, true for odd and false for even numbers, and create another array (result) where we use filter() function and pass (sold) as a callback function and store odd numbers. Now when the code executes, what the filter() function does is call the (sold) function for every value of (arr) and when the (isOdd) function returns true for any value it maps to the (result) array.
+        </p>
+
+        <h4>Conclusion</h4>
+        <p class="last-para">
+            These are the two array methods that use call back function as arguments there are more array methods that use call back as an augment eg for each(), every(), some(), etc. These methods are complex and difficult to understand, but, once you get comfortable these methods help you to create awesome stuff.
+
+            </p>
+
+
+      </article>
+      <footer class="footer">
+
+        <ul class="list-non-bullet">
+    
+          <li class="list-inline"><a class="link" href=""><i class="fab fa-instagram"></i> &nbsp; Instagram</a> </li>
+          <li class="list-inline"><a class="link " href="https://github.com/almight3" target="_blank"> <i
+                class="fab fa-github"></i>&nbsp; Github</a> </li>
+          <li class="list-inline"><a class="link " href="https://www.linkedin.com/in/priyanshu-shrivastava-9b4ba1160/"
+              target="_blank"><i class="fab fa-linkedin"></i>&nbsp; LinkedIn</a></li>
+        </ul>
+    
+        <div>
+          <div class="container-center">
+            <hr>
+          </div>
+          <div class="copyright">
+            <small style="font-weight: 700; font-size: medium;">made with <i class="fas fa-heart foot-icon"></i> Priyanshu
+            </small>
+          </div>
+    
+        </div>
+      </footer>
+    
+    
+</body>
+</html>
